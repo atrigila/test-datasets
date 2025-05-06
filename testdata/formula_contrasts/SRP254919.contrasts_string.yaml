@@ -3,6 +3,7 @@ contrasts:
     comparison: ["treatment", "mCherry", "hND6"]
   - id: treatment_mCherry_hND6_sample_number
     formula: "~ treatment + sample_number"
+    make_contrasts_str: "treatmenthND6 - treatmentmCherry"
   - id: treatment_mCherry_hND6_sample_number_complex
     comparison: ["treatment", "mCherry", "hND6"]
     blocking_factors: ["sample_number"]
